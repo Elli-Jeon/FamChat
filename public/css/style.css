@@ -1,3 +1,4 @@
+/* common */
 :root {
     --main-color : #b9e567;
 }
@@ -8,6 +9,12 @@
     box-sizing: border-box;
 }
 
+li {
+    list-style: none;
+}
+
+
+/* header - Nav */
 nav {
     background-color: var(--main-color);
     display: flex;
@@ -32,8 +39,8 @@ nav .profile {
 }
 
 nav .profile img {
-    width : 100px;
-    height: 100px;
+    width : 90px;
+    height: 90px;
     border-radius: 50%;
 }
 
@@ -45,8 +52,7 @@ nav .profile i {
     font-size: 1.5rem;
 }
 
-/* header - Nav */
-
+/* Container */
 .container {
     display: flex;
     justify-content: space-between;
@@ -65,3 +71,35 @@ nav .profile i {
 .container .chatlist {
     flex : 1;
 }
+
+/* family list */
+
+.familylist .group ul{ 
+    display : flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin : 10px 0;
+}
+
+.familylist .group ul li {  /*여기 한번 수정 필요 responsive하게*/
+    margin : 0 auto;
+    border-left : 1px solid #9fdb30;
+    padding-left: 8%;
+    color: black;
+    position: relative ;
+    font-size: 1rem;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.familylist .group ul li:nth-child(1) {
+    border: none;
+}
+
+.familylist .group ul li a:hover {
+    color : var(--main-color);
+}   
+
+
+
