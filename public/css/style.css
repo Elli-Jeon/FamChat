@@ -101,11 +101,14 @@ nav .profile i {
     color : var(--main-color);
 }
 
+/* Search_box */
+
 .familylist .search_box .search_bg {
     width : 90%;
     height: 90%;
     padding : 10px;
     margin : auto;
+    white-space: nowrap; /*다음줄로 안 넘어가게*/
 }
 
 .familylist .search_box .search_bg input {
@@ -117,4 +120,27 @@ nav .profile i {
     padding : 0.3rem;
     border : 1px solid black;
     background: none;
+}
+
+/* friendlist */
+.familylist .friendlist {
+    display : flex;
+    flex-direction: column;
+}
+
+.familylist .friendlist .friend{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 2px 0;
+}
+
+.familylist .friendlist .friend img {
+    width : 50px;
+    height : 50px;
+}
+
+.familylist .friendlist .friend button {
+    background: none;
+    border : none;
 }
