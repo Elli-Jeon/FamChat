@@ -79,7 +79,7 @@ nav .profile i {
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin : 10px 0;
+    margin : 10px 8px 0;
 }
 
 .familylist .group ul li {  /*여기 한번 수정 필요 responsive하게*/
@@ -99,7 +99,22 @@ nav .profile i {
 
 .familylist .group ul li a:hover {
     color : var(--main-color);
-}   
+}
 
+.familylist .search_box .search_bg {
+    width : 90%;
+    height: 90%;
+    padding : 10px;
+    margin : auto;
+}
 
+.familylist .search_box .search_bg input {
+    border : 1px solid black;
+    padding : 0.3rem;
+}
 
+.familylist .search_box .search_bg button {
+    padding : 0.3rem;
+    border : 1px solid black;
+    background: none;
+}
